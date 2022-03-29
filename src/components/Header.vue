@@ -7,7 +7,7 @@
           </div>
           <div class="f aic">
               <img class="w20" src="../assets/imgLogoCompany.png" alt="">
-              <div class="ml1">
+              <div class="ml1 align-r">
                   <p class="white h6">
                       Nguyen Thi Bill
                   </p>
@@ -17,8 +17,9 @@
               </div>
           </div>
       </div>
-      <div class="w100 mt15">
-          <input class="w100 pt1 pb1" placeholder="Tìm kiếm ..." type="text" name="" id="">
+      <div class="w100 mt15 ralative">
+          <img src="../assets/Enter email.png" class="absolute mt1 ml15" style="height: 18px">
+          <input class="w100 pt1 pb1 pl4" placeholder="Tìm kiếm ..." type="text" name="" id="">
       </div>
   </div>
 </template>

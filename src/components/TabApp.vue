@@ -1,10 +1,12 @@
 <template>
-  <div class="w100 mt2 f fw jcb" >
-    <ul v-for="item in app" :key="item" id="list-app-tab" class="f mb2" style="width: 31%; height: 288px; background-color: rgba(20, 20, 20, 0.4); backdrop-filter: blur(20px);">
+  <div class="w100 mt15 f fw jcb" >
+    <ul v-for="item in app" :key="item" id="list-app-tab" class="f mb2 border-radius" style="width: 31%; height: 288px; background-color: rgba(20, 20, 20, 0.4); backdrop-filter: blur(20px);">
       <li v-for="item in item.appTab" :key="item" class="f fw pt1 pb1 pr1 pl1" style="width: calc(100% + 5em)">
         <div>
-          <img style="width: 64px" :src="item.imgApp" alt="">
-          <p class="p-small white align-c" style="width: 64px">{{item.nameApp}}</p>
+          <router-link to="/personnel">
+            <img style="width: 64px" :src="item.imgApp" alt="">
+            <p class="p-small white align-c" style="width: 64px">{{item.nameApp}}</p>
+          </router-link>
         </div>
       </li>
     </ul>

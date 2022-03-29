@@ -1,5 +1,20 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div id="PerView" class="bg-white">
+    <h1>Hello word</h1>
+
+    <router-link to="/">
+      <div>
+        Màn hình chính
+      </div>
+    </router-link>
   </div>
 </template>
+
+<style scoped>
+#PerView {
+  width: 100%;
+  height: 100vh;
+}
+</style>
+
+

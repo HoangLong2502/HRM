@@ -2,7 +2,7 @@
   <div class="home">
     <Header />
     <div class="swiper-container">
-      <div class="carousel" data-flickity='{ "contain": true, "prevNextButtons": false, "pageDots": true }'>
+      <div class="carousel" style="width: 100%)" data-flickity='{ "contain": true, "prevNextButtons": false, "pageDots": true }'>
         <div class="carousel-cell">
           <Body />
           <ListApp /> 
@@ -52,13 +52,28 @@ export default Vue.extend({
 body { font-family: sans-serif; }
 
 .carousel-cell {
-  counter-increment: carousel-cell;
+  counter-increment: gallery-cell;
+  width: 100%;
+  margin-right: 40px;
+  
 }
 
 /* cell number */
 .carousel-cell:before {
   display: block;
+}
 
+.flickity-page-dots .dot {
+  
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+
+.flickity-page-dots .dot.is-selected {
+  background: white;
 
 }
 

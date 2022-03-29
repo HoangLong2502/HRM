@@ -1,6 +1,6 @@
 <template>
   <div class="w100 mt4 f jcc">
-    <div id="listAppNav" style="width: 806px; background-color: rgba(255, 255, 255, 0.4)">
+    <div id="listAppNav" class="border-radius" style="width: 806px; background-color: rgba(255, 255, 255, 0.4)">
         <img style="width: 62.5px" v-for="item in listAppNav" :key="item" :src="item.img" alt="">
     </div>
   </div>
