@@ -10,7 +10,9 @@
 
 <style lang="scss">
 #app{
-  background-image: url('/src/assets/ImageimgBackground.png')
+  background-image: url('/src/assets/ImageimgBackground.png');
+  background-position: center;
+  background-size: cover;
 }
 
 @import '/global/index';

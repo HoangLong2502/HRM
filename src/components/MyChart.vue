@@ -1,11 +1,11 @@
 <template>
   <div id="chart" style="{ width: '400px' }">
-    <BarChart style="background-color: #fff" ref='barChartRef' :chart-data='testData'  />
+    <BarChart style="background-color: #fff" ref='barChartRef' :chart-data='testData' :chart-options='options' />
   </div>
 </template>
 <script lang="ts">
 import { Chart, ChartData, ChartOptions, registerables } from "chart.js";
-import { BarChart, ExtractComponentData, useBarChart } from "vue-chart-3";
+import { BarChart, ExtractComponentData } from "vue-chart-3";
 import { Component, Vue, Ref } from "vue-property-decorator";
 
 Chart.register(...registerables);
@@ -17,7 +17,6 @@ export default class MyChart extends Vue {
 
   @Ref() barChartRef!: ExtractComponentData<typeof BarChart>
 
-
   public data = [30, 40, 60, 70, 50, 40, 60, 70, 50, 40, 60, 70, 50];
   public legendTop = true;
 
@@ -25,23 +24,15 @@ export default class MyChart extends Vue {
     return {
       scales: {
         x: {
-          grid: {
-            display: false
-          }
+          display: false,
         },
         y: {
-          grid: {
-            display: false
-          }
-        },
-        myScale: {
-          type: "logarithmic",
-          position: this.legendTop ? "left" : "right",
+          display: false,
         },
       },
       plugins: {
         legend: {
-          position: this.legendTop ? "top" : "bottom",
+          display: false,
         },
         title: {
           display: false,
@@ -56,6 +47,7 @@ export default class MyChart extends Vue {
       labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec "],
       datasets: [
         {
+          label: "Doanh thu",
           data: this.data,
           backgroundColor: [
             "#DEDEEC",
@@ -65,13 +57,14 @@ export default class MyChart extends Vue {
             "#DEDEEC",
             "#DEDEEC",
             "#DEDEEC",
-            "#585CA2",
+            "#DEDEEC",
             "#DEDEEC",
             "#DEDEEC",
             "#DEDEEC",
             "#DEDEEC",
           ],
-          borderRadius: 15
+          borderRadius: 8,
+          hoverBackgroundColor: '#585CA2'
         },
       ],
     }

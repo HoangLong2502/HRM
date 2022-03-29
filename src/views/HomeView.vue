@@ -1,28 +1,42 @@
 <template>
   <div class="home">
-    <Header msg="Welcome to Your Vue.js + TypeScript App"/>
-    <Body msg="Welcome to Your Vue.js + TypeScript App"/>
-    <ListApp msg="Welcome to Your Vue.js + TypeScript App"/>
-    <Footer msg="Welcome to Your Vue.js + TypeScript App"/>
+    <Header />
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <Body />
+          <ListApp /> 
+        </div> 
+        <div class="swiper-slide">
+          <TabApp /> 
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <NavBar />
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+import { Vue } from 'vue-property-decorator';
 import Header from '@/components/Header.vue'; // @ is an alias to /src
 import Body from '@/components/Body.vue';
 import ListApp from '@/components/ListApp.vue';
-import Footer from '@/components/Footer.vue';
+import NavBar from '@/components/NavBar.vue';
+import TabApp from '@/components/TabApp.vue'
 
-@Component({
+
+// import required modules
+
+export default Vue.extend({
   components: {
     Header,
     Body,
     ListApp,
-    Footer,
+    NavBar,
+    TabApp,
   },
 })
-export default class HomeView extends Vue {}
 </script>
 
 <style lang="scss">

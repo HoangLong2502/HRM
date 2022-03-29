@@ -17,7 +17,7 @@
               </div>
           </div>
       </div>
-      <div class="w100 mt2">
+      <div class="w100 mt15">
           <input class="w100 pt1 pb1" placeholder="Tìm kiếm ..." type="text" name="" id="">
       </div>
   </div>
