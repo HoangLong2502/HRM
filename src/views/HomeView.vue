@@ -2,16 +2,16 @@
   <div class="home">
     <Header />
     <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
+      <div class="carousel" data-flickity='{ "contain": true, "prevNextButtons": false, "pageDots": true }'>
+        <div class="carousel-cell">
           <Body />
           <ListApp /> 
         </div> 
-        <div class="swiper-slide">
+        <div class="carousel-cell">
           <TabApp /> 
         </div>
       </div>
-      <div class="swiper-pagination"></div>
+      <div></div>
     </div>
     <NavBar />
   </div>
@@ -23,7 +23,8 @@ import Header from '@/components/Header.vue'; // @ is an alias to /src
 import Body from '@/components/Body.vue';
 import ListApp from '@/components/ListApp.vue';
 import NavBar from '@/components/NavBar.vue';
-import TabApp from '@/components/TabApp.vue'
+import TabApp from '@/components/TabApp.vue';
+
 
 
 // import required modules
@@ -38,10 +39,27 @@ export default Vue.extend({
   },
 })
 </script>
-
 <style lang="scss">
 .home {
   width: 924px;
   margin: 0px auto;
 }
+
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel-cell {
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+
+
+}
+
 </style>
