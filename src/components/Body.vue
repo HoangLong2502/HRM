@@ -23,8 +23,8 @@
         <div class="f boder-radius">
             <div class="bg-white-1 mr1 border-radius w50">
                 <div class="f pt05 pb05 pl1 pr1" style="border-radius: 8px 8px 0 0;background: linear-gradient(180deg, #FFD422 0%, #F2C800 100%);">
-                    <img src="../assets/Folder.png" alt="">
-                    <p class="h5 white">Note</p>
+                    <img style="width:24px" src="../assets/Folder.png" alt="">
+                    <p class="ml05 h5 white">Note</p>
                 </div>
                 <div class="pt1 pr1 pl1 pb2">
                     <p class="h6">Thẻ thanh toán</p>
@@ -50,7 +50,7 @@
                 <div class="f fdc pl05 pr05 pt05 pb05">
                     <div class="f jcb">
                         <p class="h7 border-left-2 pl05">Gọi điện cho Nhà cung cấp</p>
-                        <input type="radio" name="check" id="">
+                        <input class="pt0 pb0 pl0 pr0" style="width: 21px; border-radius: 50px" type="radio" name="check" id="">
                     </div>
                     <div class="f jcb aic mt05">
                         <div class="bg-gray-1 w70 h6px border-radius">
@@ -65,7 +65,7 @@
                 <div class="f fdc pl05 pr05 pt05 pb05">
                     <div class="f jcb">
                         <p class="h7 border-left-2 pl05">Gọi điện cho Nhà cung cấp</p>
-                        <input type="radio" name="check" id="">
+                        <input class="pt0 pb0 pl0 pr0" style="width: 21px; border-radius: 50px" type="radio" name="check" id="">
                     </div>
                     <div class="f jcb aic mt05">
                         <div class="bg-gray-1 w70 h6px border-radius">

@@ -9,7 +9,7 @@ body {
   @extend %f-primary;
   color: $c-black;
 
-  *{
+  * {
     @extend %anti-alias;
   }
 }
@@ -110,6 +110,17 @@ label {
   @extend %p6;
 }
 
+%p7 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+
+.p7 {
+  @extend %p7;
+}
+
 %p {
   font-style: normal;
   font-weight: normal;
@@ -145,7 +156,7 @@ p {
   line-height: 12.1px;
 }
 
-.p-xsmall{
+.p-xsmall {
   @extend %p-xsmall;
 }
 
@@ -156,7 +167,7 @@ p {
   line-height: 30px;
 }
 
-.p-bold{
+.p-bold {
   @extend %p-bold;
 }
 
@@ -173,11 +184,11 @@ p {
 }
 
 .border-left-1 {
-  border-left: 2px solid #06C270;
+  border-left: 2px solid #06c270;
 }
 
 .border-left-2 {
-  border-left: 2px solid #585CA2;
+  border-left: 2px solid #585ca2;
 }
 
 .border-right {
@@ -187,7 +198,6 @@ p {
 .border-bottom {
   border-bottom: 1px solid $c-border;
 }
-
 
 .border-error {
   border: 1px solid $c-error;

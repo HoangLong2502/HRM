@@ -3,16 +3,17 @@
       <div class="f fw jcb w100 mt2">
           <div class="f aic">
               <img class="w10" src='../assets/imgLogoCompany.png' alt="">
-              <p class="white ml1 p-bold">Cong ty co phan Cong Nghe Cao IDT</p>
+              <p class="white ml1 mr1 p-bold">Công ty cổ phần Công Nghệ Cao IDT</p>
+              <img src="../assets/downWhite.png" alt="">
           </div>
           <div class="f aic">
               <img class="w20" src="../assets/imgLogoCompany.png" alt="">
               <div class="ml1 align-r">
                   <p class="white h6">
-                      Nguyen Thi Bill
+                      Nguyễn Sơn Tùng
                   </p>
                   <p class="white p6">
-                      Giam doc Cong Nghe
+                      Giám đốc công nghệ
                   </p>
               </div>
           </div>
