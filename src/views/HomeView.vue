@@ -2,7 +2,7 @@
   <div class="home">
     <Header />
     <div class="swiper-container">
-      <div class="carousel" style="width: 100%" data-flickity='{"wrapAround": true, "contain": true, "prevNextButtons": false, "pageDots": true }'>
+      <div class="carousel" style="width: 100%" data-flickity='{ "contain": true, "prevNextButtons": false, "pageDots": true }'>
         <div class="carousel-cell">
           <Body />
           <ListApp /> 
@@ -54,7 +54,7 @@ body { font-family: sans-serif; }
 .carousel-cell {
   counter-increment: gallery-cell;
   width: 100%;
-  margin-right: 64px;
+  margin-right: 40px;
   
 }
 
