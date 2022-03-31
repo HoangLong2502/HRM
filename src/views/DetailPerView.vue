@@ -250,7 +250,7 @@ export default {
             var d = new Date();
             var note = {
                 textNote: text,
-                timeNote: d.getHours() + ":" + d.getMinutes() + " - " + d.getDay() + "/" + d.getMonth() + "/" + d.getFullYear(),
+                timeNote: d.getHours() + ":" + d.getMinutes() + " - " + d.getDate() + "/" + (d.getMonth() + 1) + "/" + d.getFullYear(),
             }
             this.dataNote.push(note);
             console.log(document.getElementsByClassName('note--input')[0])
