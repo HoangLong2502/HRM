@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import PerView from '../views/PerView.vue'
+import DetailPerView from '../views/DetailPerView.vue'
 
 Vue.use(VueRouter)
 
@@ -23,6 +24,11 @@ const routes: Array<RouteConfig> = [
     path: '/personnel',
     name: 'personnel',
     component: PerView
+  },
+  {
+    path: '/detail',
+    name: 'detail',
+    component: DetailPerView
   }
 ]
 
